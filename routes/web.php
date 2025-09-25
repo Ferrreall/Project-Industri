@@ -6,6 +6,7 @@ use App\Models\post;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\BiodataController;
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\TugasIndustriController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -83,9 +84,11 @@ Route::get('biodata', function () {
 // Route::get('post', [PostController::class, 'tampil']);
 
 // Route::get('biodata', [BiodataController::class, 'tampilkan']);
-Auth::routes();
+// Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 
 Route::get('/product',[ProductController::class, 'index'])->name('product');
+
+Route::resource('tugas', TugasIndustriController::class);
