@@ -13,8 +13,13 @@ class Mahasiswa extends Model
         return $this->hasOne(Wali::class, 'id_mahasiswa');
     }
 
-    public function dosen() 
+    public function dosen()
     {
         return $this->belongsTo(Dosen::class, 'id_dosen');
+    }
+
+    public function hobis()
+    {
+        return $this->belongsToMany(Hobi::class, 'mahasiswa_hobi', 'id_mahasiswa', 'id_hobi');
     }
 }

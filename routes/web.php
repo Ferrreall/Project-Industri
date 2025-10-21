@@ -6,6 +6,7 @@ use App\Models\post;
 use App\Models\Wali;
 use App\Models\Mahasiswa;
 use App\Models\TugasIndustri;
+use App\Models\Hobi;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\BiodataController;
 use App\Http\Controllers\PostsController;
@@ -13,6 +14,7 @@ use App\Http\Controllers\ProductController;
 use App\Http\Controllers\PenggunaController;
 use App\Http\Controllers\TugasIndustriController;
 use App\Http\Controllers\RelasiController;
+
 
 
 Route::get('/', function () {
@@ -156,3 +158,15 @@ Route::get('/mahasiswa-ke-dosen', function () {
     $mhs = Mahasiswa::where('nim', '123456')->first();
     return "{$mhs->nama} dibimbing oleh {$mhs->dosen->nama}";
 });
+
+
+Route::get('/many-to-many', [RelasiController::class, 'manyToMany']);
+
+Route::get('/hobi/bola', function () {
+    $hobi = Hobi::where('nama_hobi', 'Bermain Bola')->first();
+    foreach ($hobi->mahasiswas as $mhs) {
+        echo $mhs->nama . '<br>';
+    }
+});
+
+Route::get('eloquent', [RelasiController::class, 'eloquent']);
