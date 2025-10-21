@@ -24,8 +24,8 @@ class DatabaseSeeder extends Seeder
         $this->call([
             BiodatasTablesSeeder::class,
             PostsTablesSeeder::class,
-            ProductSeeder::class,
-            TugasIndustriSeeder::class
+            // ProductSeeder::class,
+            // TugasIndustriSeeder::class
         ]);
     }
 }

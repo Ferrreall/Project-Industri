@@ -23,6 +23,7 @@ class BiodatasTablesSeeder extends Seeder
                 'alamat' => 'Tarate',
                 'telepon' => '083113014310',
                 'email' => 'feri@gmail.com',
+                'cover'   => '',
             ],
 
             [
@@ -34,6 +35,7 @@ class BiodatasTablesSeeder extends Seeder
                 'alamat' => 'Cibiru',
                 'telepon' => '085413014310',
                 'email' => 'reza@gmail.com',
+                'cover'   => '',
             ],
 
             [
@@ -45,6 +47,7 @@ class BiodatasTablesSeeder extends Seeder
                 'alamat' => 'Rancamanyar',
                 'telepon' => '083113456310',
                 'email' => 'ipat@gmail.com',
+                'cover'   => '',
             ],
 
             [
@@ -56,6 +59,7 @@ class BiodatasTablesSeeder extends Seeder
                 'alamat' => 'kopo',
                 'telepon' => '085473014310',
                 'email' => 'galang@gmail.com',
+                'cover'   => '',
             ],
 
             [
@@ -67,6 +71,7 @@ class BiodatasTablesSeeder extends Seeder
                 'alamat' => 'Rancamanyar',
                 'telepon' => '083113014310',
                 'email' => 'alham@gmail.com',
+                'cover'   => '',
             ],
 
             [
@@ -78,6 +83,7 @@ class BiodatasTablesSeeder extends Seeder
                 'alamat' => 'Tarate',
                 'telepon' => '087789014310',
                 'email' => 'arya@gmail.com',
+                'cover'   => '',
             ],
 
             [
@@ -89,6 +95,7 @@ class BiodatasTablesSeeder extends Seeder
                 'alamat' => 'Citepus',
                 'telepon' => '083113088910',
                 'email' => 'faisal@gmail.com',
+                'cover'   => '',
             ],
 
             [
@@ -100,6 +107,7 @@ class BiodatasTablesSeeder extends Seeder
                 'alamat' => 'Kopo',
                 'telepon' => '083113014310',
                 'email' => 'ahmad@gmail.com',
+                'cover'   => '',
             ],
 
             [
@@ -111,6 +119,7 @@ class BiodatasTablesSeeder extends Seeder
                 'alamat' => 'Bojong Cijerah',
                 'telepon' => '083112333310',
                 'email' => 'topick@gmail.com',
+                'cover'   => '',
             ],
 
             [
@@ -122,6 +131,7 @@ class BiodatasTablesSeeder extends Seeder
                 'alamat' => 'TCI',
                 'telepon' => '083999914310',
                 'email' => 'jaup@gmail.com',
+                'cover'   => '',
             ],
         ]);
     }

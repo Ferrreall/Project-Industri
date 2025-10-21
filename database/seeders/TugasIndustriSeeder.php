@@ -11,7 +11,7 @@ class TugasIndustriSeeder extends Seeder
     {
         DB::table('tugas_industris')->insert([
             [
-                'nama_lengkap' => 'Feri',
+                'nama_lengkap' => 'Feri kembaran Kairi',
                 'jenis_kelamin' => 'Laki-laki',
                 'tanggal_lahir' => '2008-10-12',
                 'tempat_lahir' => 'Bandung',

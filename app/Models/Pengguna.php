@@ -5,12 +5,11 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-
-class post extends Model
+class Pengguna extends Model
 {
     use HasFactory;
 
     // protected $table = 'posts';
-    protected $fillable = ['id', 'title', 'content', 'cover'];
+    protected $fillable = ['id', 'name'];
     public    $timestamp = true;
 }
